@@ -1,33 +1,46 @@
+/* Centering text within the app */
 .App {
   text-align: center;
 }
 
+/* Adjusting the logo size and disabling pointer events */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Logo spin animation only when reduced motion preference is not set */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Styling for the app header with updated color tones */
 .App-header {
-  background-color: #282c34;
+  background-color: #1e1f26; /* Darker background color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #e0e0e0; /* Softer, light gray text color */
 }
 
+/* Styling for links within the app */
 .App-link {
-  color: #61dafb;
+  color: #ff6f61; /* Warmer, vibrant link color */
+  text-decoration: none; 
+  transition: color 0.3s ease;
 }
 
+/* Adding hover effect to links */
+.App-link:hover {
+  color: #ff8a65; /* Slightly lighter tone on hover */
+}
+
+/* Defining the spin animation for the logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
